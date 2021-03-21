@@ -1,0 +1,572 @@
+*{
+    padding:0;
+    margin:0;
+    outline:0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+    display: inline-block;
+}
+ul li,ol li{
+    list-style-type:none;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ /* Banner */
+.banner{
+    background-image: url(image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+}
+.banner::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.icon{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    color: white;
+}
+.icon a {
+    color: white;
+}
+/* Header */
+header{
+    padding-top: 20px;
+}
+.header-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+.menu-bar{
+    display: flex;
+}
+.menu-bar li{
+    padding: 10px;
+    margin: 10px;
+}
+.menu-bar li a{
+    font-size: 18px;
+    color: white;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+}
+.menu-bar li a:hover{
+    color: #FB2274;
+}
+.menu-bar li .active{
+    color: #FB2274;
+}
+/* Banner-Text */
+.banner-text{
+    text-align: center;
+}
+.banner-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 250px;
+}
+.banner-area h1{
+    font-size: 100px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.banner-area h1 span{
+    color: #FB2274;
+}
+.banner-area p{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/* About */
+.about{
+    padding: 100px 0;
+}
+.about-area{
+    text-align: center;
+}
+.about-area h2{
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.about-area p{
+    font-size: 25px;
+    color: rgba(128, 128, 128, 0.89);
+}
+.learn-btn a{
+    padding: 15px 50px;
+    border: 2px solid #FB2274;
+    color: #FB2274;
+    margin-top: 40px;
+    display: inline-block;
+    transition: all 0.3s linear;
+}
+.learn-btn a:hover{
+    color: white;
+    background-color: #FB2274;
+}
+/* Service */
+.service{
+    padding-bottom: 100px;
+}
+.service-area{
+    text-align: center;
+}
+.service-area h2{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.service-area p{
+    font-size: 25px;
+    color: rgba(128, 128, 128, 0.89);
+}
+.service-area-img{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.app-text img,
+.web-text img,
+.test-text img{
+    width: 370px;
+    height: 250px;
+}
+.app-text img,
+.web-text img,
+.test-text img{
+  margin:0 10px;
+}
+.app-text h4,
+.web-text h4,
+.test-text h4{
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+/* Contact */
+.contact{
+    margin-top: 50px;
+}
+.contact-area{
+    display: flex;
+}
+.contact-area-left{
+    margin-left: 50px;
+}
+.contact-area-right{
+    margin-left: 30px;
+}
+.contact-form{
+    margin-left: 20px;
+}
+.contact-form h2{
+    font-size: 48px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+.contact-form input{
+    width: 560px ;
+    height: 55px;
+    border: 1px solid #aaa;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+}
+.text-area textarea {
+    width: 560px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.submit-btn a{
+    padding: ;
+}
+.submit-btn a{
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid #FB2274;
+    color: #FB2274;
+    display: inline-block;
+    transition: all 0.3s linear;
+    width: 560px;
+    height: 55px;
+    text-align: center;
+}
+.submit-btn a:hover{
+    color: white;
+    background-color: #FB2274;
+}
+
+
+/* Responsive */
+/* extra Small devices 420px */
+@media (max-width: 420px) {
+    .container{
+        width:100%;
+    }
+    .banner{
+        height: 500px;
+    }
+    .banner-area{
+        padding-top: 150px;
+    }
+    .menu-bar li{
+        padding: 0px;
+        margin: 5px;
+    }
+    .menu-bar li a{
+        font-size: 11px;
+    }
+    .icon{
+        top: 80%;
+    }
+    .logo{
+        margin-left: 0px;
+        font-size: 35px;
+    }
+    .about {
+        padding: 80px 0;
+    }
+    .text-area textarea,
+    .submit-btn a,
+    .contact-form input{
+        width:98%;
+    }
+    .contact-area-left{
+        margin-left: 10px;
+    }
+    .contact-form{
+        margin-left: 5px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .header-area{
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .banner-area h1{
+        font-size: 30px;
+    }
+    .banner-area p{
+        font-size: 12px;
+    }
+    .about-area h2{
+        font-size: 30px;
+    }
+    .about-area p{
+        width: 100%;
+    }
+    .service {
+        padding-bottom: 50px;
+    }
+    .service-area h2{
+        font-size: 30px;
+    }
+    .service-area p{
+        width: 100%;
+        font-size: 23px;
+    }
+    .app-text img, 
+    .web-text img, 
+    .test-text img{
+        width: 100%;
+        margin: 0px;
+    }
+    .app-text h4,
+    .web-text h4{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .contact-area{
+        flex-direction: column;
+    }
+    .contact-area-right{
+        margin-left: 5px;
+    }
+    .map{
+        margin-right: 10px;
+    }
+    .map iframe{
+        width:98%;
+        height: 400px;
+    }
+    .text-area textarea{
+        margin-top: 25px;
+    }
+}
+
+/* Small devices 420px - 574px */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .container{
+        width:100%;
+    }
+    .banner{
+        height: 500px;
+    }
+    .banner-area{
+        padding-top: 150px;
+    }
+    .menu-bar li{
+        padding: 0px;
+        margin: 5px;
+    }
+    .icon{
+        top: 80%;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .about {
+        padding: 80px 0;
+    }
+    .text-area textarea,
+    .submit-btn a,
+    .contact-form input{
+        width:98%;
+    }
+    .contact-area-left{
+        margin-left: 10px;
+    }
+    .contact-form{
+        margin-left: 5px;
+    }
+    .contact-form h2{
+        margin-top: 40px;
+    }
+    .header-area{
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .banner-area h1{
+        font-size: 30px;
+    }
+    .banner-area p{
+        font-size: 12px;
+    }
+    .about-area h2{
+        font-size: 40px;
+    }
+    .about-area p{
+        width: 94%;
+    }
+    .service {
+        padding-bottom: 50px;
+    }
+    .service-area p{
+        width: 100%;
+    }
+    .app-text img, 
+    .web-text img, 
+    .test-text img{
+        width: 90%;
+    }
+    .app-text h4,
+    .web-text h4{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .contact-area{
+        flex-direction: column;
+    }
+    .map iframe{
+        width: 98%;
+        height: 500px;
+    }
+    .text-area textarea{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+}
+
+/* Small devices 575px - 767px */
+@media (min-width: 575px) and (max-width: 767px) {
+    .container{
+        width:100%;
+    }
+    .banner{
+        height: 500px;
+    }
+    .banner-area{
+        padding-top: 150px;
+    }
+    .icon{
+        top: 80%;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .text-area textarea,
+    .submit-btn a,
+    .contact-form input{
+        width: 98%;
+    }
+    .contact-area-left{
+        margin-left: 10px;
+    }
+    .contact-form{
+        margin-left: 5px;
+    }
+    .header-area{
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .banner-area h1{
+        font-size: 30px;
+    }
+    .banner-area p{
+        font-size: 12px;
+    }
+    .about-area h2{
+        font-size: 40px;
+    }
+    .about-area p{
+        width: 95%;
+    }
+    .service {
+        padding-bottom: 40px;
+    }
+    .service-area p{
+        width: 100%;
+    }
+    .app-text img, 
+    .web-text img, 
+    .test-text img{
+        width: 90%;
+    }
+    .app-text h4,
+    .web-text h4{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .contact-area{
+        flex-direction: column;
+    }
+    .contact-area-right{
+        margin-left: 0px;
+    }
+    .map iframe{
+        width: 98%;
+    }
+}
+
+/* Medium devices 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width:100%;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .text-area textarea,
+    .submit-btn a,
+    .contact-form input{
+        width: 98%;
+    }
+    .contact-area-left{
+        margin-left: 10px;
+    }
+    .contact-form{
+        margin-left: 5px;
+    }
+    .header-area{
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .banner-area h1{
+        font-size: 30px;
+    }
+    .banner-area p{
+        font-size: 12px;
+    }
+    .about-area h2{
+        font-size: 40px;
+    }
+    .about-area p{
+        width: 75%;
+    }
+    .service-area p{
+        width: 75%;
+    }
+    .app-text img, 
+    .web-text img, 
+    .test-text img{
+        margin: 0 5px;
+    }
+    .test-text{
+        margin-top: 10px;
+    }
+    .contact-area{
+        flex-direction: column;
+    }
+    .contact-area-right {
+        margin-left: 0px;
+    }
+    .map iframe{
+        width: 98%;
+    }
+}
+
+/* large devices 992px - 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container{
+        width: 1000px;
+    }
+    .text-area textarea,
+    .submit-btn a,
+    .contact-form input{
+        width: 100%;
+    }
+    .contact-area-left{
+        margin-left: 10px;
+    }
+    .contact-form{
+        margin-left: 5px;
+    }
+    .text-area textarea{
+        margin-top: 12px;
+    }
+
+}
